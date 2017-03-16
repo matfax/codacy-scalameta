@@ -191,7 +191,11 @@
       },
       {
         "name": "includeEnums",
-        "description": "Enforce naming convention for Enumeration Values"
+        "description": "Enforce naming convention for Enumeration values"
+      },
+      {
+        "name": "includeObjects",
+        "description": "Enforce lower-case naming for object values"
       }
     ]
   },

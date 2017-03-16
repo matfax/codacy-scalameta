@@ -6,9 +6,23 @@ trait Foo[A]{
     //false positives detected by scalastyle:
     val (t1,t2,t3) = ("",0,"")
     //enum styles
-    object E1 extends Enumeration{
+    object E1 extends Enumeration {
         val A,B,C = Value
         val D = Value(42)
+    }
+
+    // Constants inside object
+    object P1 {
+        val foo1 = 1
+        val Foo2 = 2
+        val A = 3
+        val B: Int = 4
+
+        //#Info: Custom_Scala_FieldNamesChecker
+        var Foo3 = 5
+
+        //#Info: Custom_Scala_FieldNamesChecker
+        val INCORRECT_CONSTANT = 6
     }
 
     //#Info: Custom_Scala_FieldNamesChecker
